@@ -1,4 +1,4 @@
-image: marcopeg/gitpod-workspace-hasura:v2.0.0-beta.1-alpha.2
+image: marcopeg/gitpod-workspace-hasura:v2.0.0-beta.1-alpha.3
 
 tasks:
   - name: Hasura
