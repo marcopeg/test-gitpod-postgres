@@ -1,6 +1,17 @@
 image:
   file: .gitpod.Dockerfile
-  
+
+tasks:
+  # Hasura Engine
+  # =============
+  - name: Hasura
+    command: HELLO=world
+      HASURA_GRAPHQL_ADMIN_SECRET="hasura"
+      HASURA_GRAPHQL_JWT_SECRET="{\"type\":\"HS256\",\"key\":\"h2leOvdgjwpV0As5L8rZlV3VDVOsOmwk\"}"
+      HASURA_GRAPHQL_UNAUTHORIZED_ROLE="anonymous"
+      hasura_start
+    openIn: right
+
 ports:
   - port: 8008
     onOpen: open-preview
