@@ -12,9 +12,8 @@ tasks:
     openIn: right
 
 ports:
-  - port: 8008
+  - port: 8080
     onOpen: open-preview
     visibility: private
-  - port: 5432
-    onOpen: ignore
+
     
