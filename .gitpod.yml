@@ -3,5 +3,8 @@ image:
   
 ports:
   - port: 8008
+    onOpen: open-preview
+    visibility: private
   - port: 5432
     onOpen: ignore
+    
