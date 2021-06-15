@@ -1,5 +1,4 @@
-image:
-  file: .gitpod.Dockerfile
+image: marcopeg/gitpod-workspace-postgres:2.6.0
   
 ports:
   - port: 8008
