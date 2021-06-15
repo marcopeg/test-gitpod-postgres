@@ -12,9 +12,9 @@ tasks:
       hasura_start
     openIn: right
 
-ports:
-  - port: 8080
-    onOpen: open-preview
-    visibility: private
+#ports:
+#  - port: 8080
+#    onOpen: open-preview
+#    visibility: private
 
     
