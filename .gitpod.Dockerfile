@@ -44,7 +44,7 @@ include \"./adminer-4.7.6-en.php\";' > /home/gitpod/.apache/public/index.php"
 RUN sudo chmod -R u+rwX,go+rX,go-w /home/gitpod/.apache/public
 
 # Prepare the data folder
-RUN mkdir -p /workspace/.pgsql/data
+RUN sudo mkdir -p /workspace/.pgsql/data
 
 ###
 ### WORKSPACE SETUP
