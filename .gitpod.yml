@@ -1,15 +1,8 @@
-image: marcopeg/gitpod-workspace-hasura:v2.0.0-beta.1-alpha.1
+image: marcopeg/gitpod-workspace-hasura:v2.0.0-beta.1-alpha.2
 
 tasks:
-  # Hasura Engine
-  # =============
   - name: Hasura
-    command: HELLO=world
-      HASURA_GRAPHQL_ADMIN_SECRET="hasura"
-      HASURA_GRAPHQL_JWT_SECRET="{\"type\":\"HS256\",\"key\":\"h2leOvdgjwpV0As5L8rZlV3VDVOsOmwk\"}"
-      HASURA_GRAPHQL_UNAUTHORIZED_ROLE="anonymous"
-      hasura_start
-    openIn: right
+    command: hasura_start
 
 #ports:
 #  - port: 8080
