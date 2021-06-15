@@ -1,7 +1,11 @@
 FROM hasura/graphql-engine:v2.0.0-beta.1 as hasura
 FROM gitpod/workspace-postgres
 
-RUN sudo apt-get install -y unixodbc-dev unixodbc
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends \
+  && apt-get install -y \
+    unixodbc-dev \
+    unixodbc \
 
 
 ###
