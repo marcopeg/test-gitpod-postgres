@@ -11,9 +11,9 @@ COPY --from=hasura /bin/graphql-engine /bin/graphql-engine
 
 # Creates the `hasura_start` command:
 ENV PATH="$PATH:$HOME/.hasura/bin"
-RUN mkdir -p ~/.hasura/bin \
-  && printf "#!/bin/bash\n/bin/graphql-engine serve" > ~/.hasura/bin/hasura_start \
-  && chmod +x ~/.hasura/bin/*
+RUN mkdir -p /home/gitpod/.hasura/bin \
+  && printf "#!/bin/bash\n/bin/graphql-engine serve" > /home/gitpod/.hasura/bin/hasura_start \
+  && chmod +x /home/gitpod/.hasura/bin/*
 
 RUN curl -L https://github.com/hasura/graphql-engine/raw/stable/cli/get.sh | bash
 
